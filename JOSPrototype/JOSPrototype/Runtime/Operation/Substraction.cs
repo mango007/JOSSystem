@@ -1,0 +1,130 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using JOSPrototype.Components;
+
+namespace JOSPrototype.Runtime.Operation
+{
+    class SubstractionOnEVH: OperationOnEVH
+    {
+        public SubstractionOnEVH(Party party, ICAssignment code, Program program)
+            : base(party, code, program, EncryptionType.AddMod, EncryptionType.AddMod, OperationType.Substraction)
+        { }
+        public SubstractionOnEVH(Party party, ICAssignment code, Program program, Operation caller)
+            : base(party, code, program, EncryptionType.AddMod, EncryptionType.AddMod, caller, OperationType.Substraction)
+        { }
+        protected override void OnEVH()
+        {
+            switch (step)
+            {
+                case 1:
+                    Numeric
+                        enckaa = program.GetValue(code.operand1),
+                        enckbb = program.GetValue(code.operand2);
+                    // Substraction needs AddMod encryption
+                    TransformEncType(enckaa, enckbb);                
+                    break;
+                case 2:
+                    // make sure two operands have same scaleBits
+                    Numeric.Scale(encVal[0], encVal[1]);
+                    EncryptionType encType = resultEncType;
+                    if (encVal[0].GetEncType() == EncryptionType.None && encVal[1].GetEncType() == EncryptionType.None)
+                    {
+                        encType = EncryptionType.None;
+                    }
+                    Numeric enc_kf_a_minus_b = encVal[0] - encVal[1];
+                    SetResult(encType, enc_kf_a_minus_b);
+                    break;
+                case 3:
+                    InvokeCaller();
+                    break;
+                default:
+                    throw new Exception();
+            }
+        }
+    }
+    class SubstractionOnKH: OperationOnKH
+    {
+        public SubstractionOnKH(Party party, ICAssignment code, Program program)
+            : base(party, code, program, EncryptionType.AddMod, EncryptionType.AddMod, OperationType.Substraction)
+        { }
+        public SubstractionOnKH(Party party, ICAssignment code, Program program, Operation caller)
+            : base(party, code, program, EncryptionType.AddMod, EncryptionType.AddMod, caller, OperationType.Substraction)
+        { }
+        protected override void OnKH()
+        {
+            switch (step)
+            {
+                case 1:
+                    Numeric
+                        ka = program.GetValue(code.operand1),
+                        kb = program.GetValue(code.operand2);
+                    // Substraction needs AddMod encryption
+                    TransformEncType(ka, kb);
+                    break;
+                case 2:
+                    Numeric.Scale(key[0], key[1]);
+                    EncryptionType encType = resultEncType;
+                    Numeric kf = null;
+                    if (key[0].GetEncType() == EncryptionType.None && key[1].GetEncType() == EncryptionType.None)
+                    {
+                        encType = EncryptionType.None;
+                        kf = key[0] - key[1];
+                    }
+                    else if (key[0].GetEncType() == EncryptionType.None && key[1].GetEncType() != EncryptionType.None)
+                    {
+                        kf = 0 - key[1];
+                    }
+                    else if (key[0].GetEncType() != EncryptionType.None && key[1].GetEncType() == EncryptionType.None)
+                    {
+                        kf = key[0];
+                    }
+                    else
+                    {
+                        kf = key[0] - key[1];
+                    }
+                    SetResult(encType, kf);
+                    break;
+                case 3:
+                    InvokeCaller();
+                    break;
+                default:
+                    throw new Exception();
+            }
+        }
+    }
+    //class Substraction : Operation
+    //{
+    //    public Substraction() : base(EncryptionType.AddMod, EncryptionType.AddMod) { }
+    //    public override void OnEVH(Party party, ICAssignment code, Program program)
+    //    {
+    //        Numeric
+    //            enckaa = program.GetValue(code.operand1),
+    //            enckbb = program.GetValue(code.operand2);
+    //        Numeric.Scale(enckaa, enckbb);
+    //        Numeric[] encVal = TransformEncType(enckaa, enckbb, party, code.index);
+    //        Numeric enckfaminusb = encVal[0] - encVal[1];
+    //        enckfaminusb.SetEncType(resultEncType);
+    //        program.SetValue(code.result, enckfaminusb);
+    //    }
+
+    //    public override void OnHelper(Party party, int line)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public override void OnKH(Party party, ICAssignment code, Program program)
+    //    {
+    //        Numeric
+    //            ka = program.GetValue(code.operand1),
+    //            kb = program.GetValue(code.operand2);
+    //        Numeric.Scale(ka, kb);
+    //        Numeric[] key = TransformEncType(ka, kb, party, code.index);           
+    //        Numeric kf = key[0] - key[1];
+    //        kf.SetEncType(resultEncType);
+    //        program.SetValue(code.result, kf);
+    //    }
+    //}
+}

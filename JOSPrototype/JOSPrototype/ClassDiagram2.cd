@@ -1,0 +1,831 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="JOSPrototype.Components.Expression" Collapsed="true">
+    <Position X="14" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.ETerminal" Collapsed="true">
+    <Position X="11.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.ELiteral&lt;T&gt;" Collapsed="true">
+    <Position X="10.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.ENumericLiteral" Collapsed="true">
+    <Position X="10.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAgAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.EVariable" Collapsed="true">
+    <Position X="13" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAACAABAAAAAEIAAAAAAAAABEAAA=</HashCode>
+      <FileName>Components\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.EBinaryOperation" Collapsed="true">
+    <Position X="15.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAACAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Components\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.EUnaryOperation" Collapsed="true">
+    <Position X="17.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAA=</HashCode>
+      <FileName>Components\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.IntermediateCode" Collapsed="true">
+    <Position X="4" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAJAAAAAAAAAAAAAQAAAAAEABBAAA=</HashCode>
+      <FileName>Components\IntermediateCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.ICSequence" Collapsed="true">
+    <Position X="3" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAACAAAAAQAAAAAAAEAAAAAAEAEAAA=</HashCode>
+      <FileName>Components\IntermediateCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.ICAssignment" Collapsed="true">
+    <Position X="5.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAERAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Components\IntermediateCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.ICWhile" Collapsed="true">
+    <Position X="7.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAEAQIAAAAAACAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Components\IntermediateCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.ICIfElse" Collapsed="true">
+    <Position X="0.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAEAAAAgAAAACAAABAIAAAAAAQEAAA=</HashCode>
+      <FileName>Components\IntermediateCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.Program" Collapsed="true">
+    <Position X="118.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAAIgYJgAAAgAAAAAAIAAAAgAEAAACACAEABAAAAA=</HashCode>
+      <FileName>Components\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.Statement" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Statement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.SSequence" Collapsed="true">
+    <Position X="1" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Components\Statement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.SAssignment" Collapsed="true">
+    <Position X="3.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Statement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.SIfElse" Collapsed="true">
+    <Position X="5.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAEAAAAAAAAAMAAAAAAAEAAA=</HashCode>
+      <FileName>Components\Statement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.SSwitch" Collapsed="true">
+    <Position X="7.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAAAAgAAAAAAAAAAAAAAAAAAIAAACAAAEAAA=</HashCode>
+      <FileName>Components\Statement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.SWhile" Collapsed="true">
+    <Position X="10" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Components\Statement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Components.SReturn" Collapsed="true">
+    <Position X="12.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Components\Statement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Config" Collapsed="true">
+    <Position X="120.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgCAIAEIAAAAAAAAAAAUKABAEAAAICAAAQBAAAQAA=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.MultiCommandsTest" Collapsed="true">
+    <Position X="122.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAAAIAAIAAQAAAAAAAAEAgAAAAAA0AAAAABAAAAAA=</HashCode>
+      <FileName>Test\MultiCommandsTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Numeric" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="118.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>lACQAAAQIIBAgAAE4IsKAAQAAgIAAIQiAgCCAAAACqQ=</HashCode>
+      <FileName>Util\Numeric.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="JOSPrototype.NumericArray" Collapsed="true">
+    <Position X="120.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAACAAIAIBAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\NumericArray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Range&lt;T&gt;" Collapsed="true">
+    <Position X="120.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAgAAACAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Util\Utility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Utility" Collapsed="true">
+    <Position X="120.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCEAggAAAAAAAAEAAAQAQQAAgAAAAAAAgAAAAAACAE=</HashCode>
+      <FileName>Util\Utility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Frontend.Parser" Collapsed="true">
+    <Position X="124" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QJMCACAiAAQAASAIEAAAAIACMAEiAAAAAAAAAAAAgEk=</HashCode>
+      <FileName>Frontend\Parser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Frontend.Token" Collapsed="true">
+    <Position X="124" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Tokenizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Frontend.Tokenizer" Collapsed="true">
+    <Position X="125.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAIAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Tokenizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Optimization.Optimizer" Collapsed="true">
+    <Position X="5.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Optimization\Optimizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Optimization.Parallelizer" Collapsed="true">
+    <Position X="5.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAGAAAAIAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Optimization\Parallelizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Client" Collapsed="true">
+    <Position X="0.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Runtime\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.EVH" Collapsed="true">
+    <Position X="3" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Runtime\EVH.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Helper" Collapsed="true">
+    <Position X="5.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.KH" Collapsed="true">
+    <Position X="7.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Runtime\KH.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Party" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAQAIAAAAAAAAAAAAAAIABQAAACAAAAA=</HashCode>
+      <FileName>Runtime\Party.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Network.ConcurrentList" Collapsed="true">
+    <Position X="118.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIAAAAAAAAAAAAAAAAAAAQAIAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Runtime\Network\ConcurrentList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Network.Dispatcher" Collapsed="true">
+    <Position X="124" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAABAAAAAAAAAAAAABAAAAAAAAAI=</HashCode>
+      <FileName>Runtime\Network\Dispatcher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Network.Message" Collapsed="true">
+    <Position X="120.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAABBIRIAUAYAAEBAAAAAAAAAAAAEQAAAAEAAI=</HashCode>
+      <FileName>Runtime\Network\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Network.Network" Collapsed="true">
+    <Position X="124" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Network\Network.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Network.Receiver" Collapsed="true">
+    <Position X="1.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAEAAAABBAEIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Network\Receiver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Network.ReceiverInternet" Collapsed="true">
+    <Position X="0.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAIAAAAAABAAAAAAAAAAAIAAAAAAAAAAIQ=</HashCode>
+      <FileName>Runtime\Network\Receiver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Network.ReceiverLocal" Collapsed="true">
+    <Position X="2.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Network\Receiver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Network.Sender" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAABAAAAAAAAAAAAAABgAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Network\Sender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Network.SenderInternet" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAEAQAAAAECAAEAAAAACAAAAAAIAAgAAAAAAAAE=</HashCode>
+      <FileName>Runtime\Network\Sender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Network.SenderLocal" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAQAAAAEAAAAQAAAACAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Network\Sender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.AdditionOnEVH" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\Addition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.AdditionOnKH" Collapsed="true">
+    <Position X="57.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\Addition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.ANDOnEVH" Collapsed="true">
+    <Position X="17.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAIAAAAAAAAAAggEAAAAAAAAgAACAAAAAAAgQ=</HashCode>
+      <FileName>Runtime\Operation\AND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.ANDOnKH" Collapsed="true">
+    <Position X="69" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAKAAIAAAAAAAAAIAIAAAAAAAAACAAAAAAAgQ=</HashCode>
+      <FileName>Runtime\Operation\AND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.ANDOnHelper" Collapsed="true">
+    <Position X="111.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\AND.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.AddModToAddOnEVH" Collapsed="true">
+    <Position X="30.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\AddModToAdd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.AddModToAddOnKH" Collapsed="true">
+    <Position X="82.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\AddModToAdd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.AddModToXOROnEVH" Collapsed="true">
+    <Position X="39.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEAQAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\AddModToXOR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.AddModToXOROnKH" Collapsed="true">
+    <Position X="91.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQEAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\AddModToXOR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.ConcealOnEVH" Collapsed="true">
+    <Position X="46.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAYAAAQAAAAAAkABwACAAAAgAAAAAAAAAEAAA=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\Conceal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.ConcealOnKH" Collapsed="true">
+    <Position X="98.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAYAEIAAAAAAAAAJwACAAAAgAAAAAAAAAGAAA=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\Conceal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.FastEqualZeroOnEVH" Collapsed="true">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAIAAAAACAAAQAEAgAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\FastEqualZero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.FastEqualZeroOnKH" Collapsed="true">
+    <Position X="60" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAIAAAAAAAAAAAEAAAIAAAAAAAAAAAACAAAAAAgA=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\FastEqualZero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.HammingDistanceOnEVH" Collapsed="true">
+    <Position X="19.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAMAgAAAAAAAAAIAAAAAACAACAgA=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\HammingDistance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.HammingDistanceOnKH" Collapsed="true">
+    <Position X="71.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQBAAAAICAAIAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\HammingDistance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.IndexMSBOnEVH" Collapsed="true">
+    <Position X="28.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAAAAAAEAgAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\IndexMSB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.IndexMSBOnKH" Collapsed="true">
+    <Position X="80.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAEAAAIAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\IndexMSB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.XORToAddModOnEVH" Collapsed="true">
+    <Position X="37.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAgQ=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\XORToAddMod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.XORToAddModOnKH" Collapsed="true">
+    <Position X="89.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAEAABIAAAAAAAAAAAAAAAAAAAgQ=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\XORToAddMod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.XORToAddModOnHelper" Collapsed="true">
+    <Position X="116.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAMAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\AuxiliaryMethods\XORToAddMod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.EqualZeroOnEVH" Collapsed="true">
+    <Position X="48.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAkAgAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Runtime\Operation\EqualZero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.EqualZeroOnKH" Collapsed="true">
+    <Position X="100.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAEAABIAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Runtime\Operation\EqualZero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.IfElseOnEVH" Collapsed="true">
+    <Position X="10.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAQAEAAAQQAAAAAAgAAwAKAAAAAACAAAAQAAAEAA=</HashCode>
+      <FileName>Runtime\Operation\IfElse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.IfElseOnKH" Collapsed="true">
+    <Position X="62.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAACYAAAAAAAAAKQAKAAAAAACAAAAQAACEAA=</HashCode>
+      <FileName>Runtime\Operation\IfElse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.Inverse" Collapsed="true">
+    <Position X="118.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAIAAAAAAAAAAgACAAAAAQAAAAAAAAAgQAEAAAACAA=</HashCode>
+      <FileName>Runtime\Operation\Inverse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.InverseOnEVH" Collapsed="true">
+    <Position X="24" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAUAACICAAAAAACEAgAAAAAAACAAAAACgAAAAIAAA=</HashCode>
+      <FileName>Runtime\Operation\Inverse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.InverseOnKH" Collapsed="true">
+    <Position X="75.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAIAAAAABAAEAAAIAAAAAAAAAgCACACIAAAgA=</HashCode>
+      <FileName>Runtime\Operation\Inverse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.LessZeroOnEVH" Collapsed="true">
+    <Position X="33" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAIAAAEAEAAEIgAIAABAAAAAAAAiAIAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\LessZero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.LessZeroOnKH" Collapsed="true">
+    <Position X="84.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAIAAAAAAAAEIAAIAAAAAAAAAAAiCAACAAAgA=</HashCode>
+      <FileName>Runtime\Operation\LessZero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.MultiLessZeroOnEVH" Collapsed="true">
+    <Position X="42" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAIAAAAAAAAEAgEAAAAAAAAAAAAAAAAAAAEgA=</HashCode>
+      <FileName>Runtime\Operation\MultiLessZero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.MultiLessZeroOnKH" Collapsed="true">
+    <Position X="93.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAIAAAAAEAgAIAAAAAAAAAAABAAAAAAAgA=</HashCode>
+      <FileName>Runtime\Operation\MultiLessZero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.MultiplicationOnEVH" Collapsed="true">
+    <Position X="51" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAYAQAAAAAAAAgAAAACAAAAAAAESAEAAAAAgQ=</HashCode>
+      <FileName>Runtime\Operation\Multiplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.MultiplicationOnKH" Collapsed="true">
+    <Position X="102.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAQAIAAIAAAAAAAAAoAAAAACAAAEACAEAAAAAgQ=</HashCode>
+      <FileName>Runtime\Operation\Multiplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.MultiplicationOnHelper" Collapsed="true">
+    <Position X="109.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\Multiplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.NoneOnEVH" Collapsed="true">
+    <Position X="15" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\None.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.NoneOnKH" Collapsed="true">
+    <Position X="66.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\None.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.NOTOnEVH" Collapsed="true">
+    <Position X="26.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\NOT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.NOTOnKH" Collapsed="true">
+    <Position X="78" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\NOT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.Operation" Collapsed="true">
+    <Position X="61" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAAAAAABBAAAAAAAAAgAAAAAAAAAABAAAI=</HashCode>
+      <FileName>Runtime\Operation\Operation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.OperationOnEVH" Collapsed="true">
+    <Position X="30.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEIgAAAAAAgAgEAIAAAAAAABAIAAAAAAAM=</HashCode>
+      <FileName>Runtime\Operation\Operation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.OperationOnKH" Collapsed="true">
+    <Position X="82.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIgAAAAAAEAoEAIAAAAAAABAIAAAAAAAM=</HashCode>
+      <FileName>Runtime\Operation\Operation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.OperationOnHelper" Collapsed="true">
+    <Position X="112.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAI=</HashCode>
+      <FileName>Runtime\Operation\Operation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.OROnEVH" Collapsed="true">
+    <Position X="53.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAgAAAAAAAAEAAAAAAAACAAAgA=</HashCode>
+      <FileName>Runtime\Operation\OR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.OROnKH" Collapsed="true">
+    <Position X="105" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAIAAAAAAAAAIAAAAAAAAAAAAAAACAAAgA=</HashCode>
+      <FileName>Runtime\Operation\OR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.ReturnOnEVH" Collapsed="true">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\Return.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.ReturnOnKH" Collapsed="true">
+    <Position X="64.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\Return.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.SinOnEVH" Collapsed="true">
+    <Position X="21.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAQEAAAIAAAAAAAAAAgAAAAAAAAAAAEAACAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\Sin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.SinOnKH" Collapsed="true">
+    <Position X="73.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAEAQAIAAIAAAAAAAAAIAAAAAAAAAAAAAAABAAgAA=</HashCode>
+      <FileName>Runtime\Operation\Sin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.SinOnHelper" Collapsed="true">
+    <Position X="114" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAACIAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\Sin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.SubstractionOnEVH" Collapsed="true">
+    <Position X="35.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\Substraction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.SubstractionOnKH" Collapsed="true">
+    <Position X="87" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\Substraction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.WhileOnEVH" Collapsed="true">
+    <Position X="44.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABQAEAAAAAAIAAAAQAgAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\While.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.WhileOnKH" Collapsed="true">
+    <Position X="96" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABQAEAAAAAAIAAAAQAAAIAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\While.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.XOROnEVH" Collapsed="true">
+    <Position X="55.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\XOR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Runtime.Operation.XOROnKH" Collapsed="true">
+    <Position X="107.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Runtime\Operation\XOR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Test.ControlAlgorithmTest" Collapsed="true">
+    <Position X="122.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAACAAAAAAAAAAAAAAAAAAAAkQAAADAAAAAI=</HashCode>
+      <FileName>Test\ControlAlgorithmTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Test.HealthData" Collapsed="true">
+    <Position X="125.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAACAAAAAAAAAAAAAAAAAAAAkAAAADAAAAAI=</HashCode>
+      <FileName>Test\HealthData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Test.NoCommunicationTest" Collapsed="true">
+    <Position X="125.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAUAKAQQIIAAIAEQIIEAAADAAAAAAAIAAAABgAAEAQ=</HashCode>
+      <FileName>Test\NoCommunicationTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Test.NumericTest" Collapsed="true">
+    <Position X="122.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Test\NumericTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Test.ParserTest" Collapsed="true">
+    <Position X="125.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Test\ParserTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Test.SingleCommandTest" Collapsed="true">
+    <Position X="122.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Test\SingleCommandTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Test.TokenizerTest" Collapsed="true">
+    <Position X="118.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Test\TokenizerTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JOSPrototype.Test.WhileIfElseTest" Collapsed="true">
+    <Position X="122.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAQEABIAAAAgAAABAAEAAAQAAAAAAAAABQAAAAA=</HashCode>
+      <FileName>Test\WhileIfElseTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="JOSPrototype.MessageID" Collapsed="true">
+    <Position X="120.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Runtime\Network\Receiver.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="JOSPrototype.Interval&lt;T&gt;" Collapsed="true">
+    <Position X="118.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\Utility.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="JOSPrototype.DependencyType" Collapsed="true">
+    <Position X="118.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="JOSPrototype.PartyType" Collapsed="true">
+    <Position X="124" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAIAAAAAAAAAAAACAAAAAAAAAAAQ=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="JOSPrototype.OperationType" Collapsed="true">
+    <Position X="122.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABAAAAASAAgqAAAAIHBADAAAgIAgAAAIIQEAEAQAA=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="JOSPrototype.EncryptionType" Collapsed="true">
+    <Position X="120.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAACAAEAAAA=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="JOSPrototype.SubdomainPrivacy" Collapsed="true">
+    <Position X="118.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="JOSPrototype.Port" Collapsed="true">
+    <Position X="125.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAIAAAAAAAAAAAACAAAAAAAAAAAQ=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="JOSPrototype.Frontend.Symbol" Collapsed="true">
+    <Position X="120.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQjAAIAAIEARESSAQgABCBhAAAAQAAMIRAAASIGAKg=</HashCode>
+      <FileName>Frontend\Tokenizer.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
